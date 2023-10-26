@@ -5,11 +5,9 @@ warnings.simplefilter('ignore')
 import numpy as np
 import pandas as pd
 #%matplotlib inline
-import matplotlib.pyplot as plt
 from skimage.io import imread, imshow
 from skimage.transform import resize
 from skimage.color import rgb2gray
-import matplotlib.image as mimg
 import pickle
 model = pickle.load(open("C:\\Users\\Shruthi\\OneDrive\\Desktop\\PA\\model.pkl",'rb'))
 n=st.file_uploader("Upload the image")
