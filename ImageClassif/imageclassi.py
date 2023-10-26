@@ -5,14 +5,12 @@ warnings.simplefilter('ignore')
 import numpy as np
 import pandas as pd
 import cv2
-#%matplotlib inline
 from skimage.io import imread, imshow
 from skimage.transform import resize
 from skimage.color import rgb2gray
 import pickle
 model = pickle.load(open("C:\\Users\\Shruthi\\OneDrive\\Desktop\\PA\\model.pkl",'rb'))
 n=st.file_uploader("Upload the image")
-#n = "/content/images.jpg"
 button=st.button("Click to see the result")
 if button:
     image = imread(n)
